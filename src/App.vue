@@ -1,16 +1,15 @@
 <template>
-  <div>
-    <hello-world></hello-world>
+  <div id="app">
+    <!-- 路由占位符 -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 export default {
-  components: {
-    HelloWorld
-  }
+  name: 'app'
 }
 </script>
 
-<style></style>
+<style>
+</style>
