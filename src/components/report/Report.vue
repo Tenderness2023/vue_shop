@@ -9,7 +9,7 @@
     <!-- 卡片试图区域 -->
     <el-card>
       <!--2. 为echarts准备一个具备大小的容器 -->
-      <div id="main" style="width: 800px;height:400px;"></div>
+      <div id="main" style="width: 850px;height:400px;"></div>
     </el-card>
   </div>
 </template>

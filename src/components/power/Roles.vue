@@ -123,7 +123,11 @@ export default {
       },
       // 默认选中的节点ID值
       defkeys: [],
-      roleId: ''
+      roleId: '',
+      addFormRules: {
+        roleDesc: [{ required: true, message: '请输入角色描述', trigger: 'blur' }],
+        roleName: [{ required: true, message: '请输入角色名称', trigger: 'blur' }]
+      }
     }
   },
   created() {

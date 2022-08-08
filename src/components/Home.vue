@@ -3,7 +3,6 @@
     <!-- 头部区域 -->
     <el-header>
       <div>
-        <img src="../assets/heima.png" alt="" />
         <span>电商后台管理系统</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button>
@@ -12,9 +11,10 @@
     <el-container>
       <!-- 侧边栏 -->
       <el-aside :width="isCollapse ? '64px' : '200px'">
+        <!-- 侧边栏隐藏 -->
         <div class="toggle-button" @click="togglecollapse">|||</div>
         <!-- 侧边栏菜单 -->
-        <el-menu background-color="#333744" text-color="#fff" active-text-color="#409eff" unique-opened :collapse="isCollapse" :collapse-transition="false" router :default-active="activePath">
+        <el-menu background-color="#333744" text-color="#fff" active-text-color="#409eff" unique-opened :collapse="isCollapse" :collapse-transition="true" router :default-active="activePath">
           <!-- 一级菜单 -->
           <el-submenu :index="item.id + ''" v-for="item in menulist" :key="item.id">
             <!-- 一级菜单模板区域 -->
@@ -101,10 +101,7 @@ export default {
   > div {
     display: flex;
     align-items: center;
-    margin-left: 15px;
-  }
-  > div img {
-    margin-right: 10px;
+    margin-left: 25px;
   }
 }
 .el-aside {
@@ -120,7 +117,7 @@ export default {
   margin-right: 10px;
 }
 .toggle-button {
-  background-color: #4a5064;
+  background-color: #62718f;
   font-size: 10px;
   color: #fff;
   letter-spacing: 0.2em;
